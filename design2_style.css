@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.lite-mde {
+    background-color: #f2f2f2;
+    color: #4a0000; /* that dark red blood color */
+    position: relative; /* bod is relative so we can put the top corners absolute */
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Asingment requires absolute psoition so lets use it here */
+.strar-logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #d60000;
+    line-height: 1;
+}
+
+.top-rite-txt {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-align: right;
+    font-size: 10px;
+    font-weight: bold;
+    color: #887474;
+}
+
+/* center stuff */
+.mian-wrap {
+    width: 60%;
+    margin: 0 auto; /* center horizontally */
+    display: flex;
+    flex-direction: column;
+}
+
+.big-hedr {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faded-txt {
+    color: #b09e9e;
+}
+
+/* the inline pill image inside the heading */
+.circl-img-wrap {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    border-radius: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative; /* using rel here */
+}
+
+.inc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* img absolute inside pill wrapper requriment */
+    top: 0;
+    left: 0;
+}
+
+.desc-txt {
+    font-size: 12px;
+    color: #4a0000;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* using FLEX for the middle part now */
+.flx-cntnt {
+    width: 100%; /* go full width */
+    position: relative; /* make parent relative to trap absolute left text */
+    display: flex;
+    justify-content: center; /* center the cards */
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* left text under OUR LATEST PROJECTS pushed absolutly to left edge!! */
+.lfet-txt {
+    position: absolute;
+    bottom: 20px; /* align with bottom of cards */
+    left: 40px; /* pull out to the far left! */
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* right flex box holding the images */
+.rit-crads {
+    display: flex;
+    gap: 15px;
+}
+
+.persn-crad {
+    width: 220px; /* Made slightly bigger for better visual match */
+    height: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* FOOTER ADDITIONS!! */
+.footer-wrap {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.footr-big {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-align: center;
+}
+
+.footr-sml {
+    font-size: 10px;
+    color: #4a0000;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+}
