@@ -1,4 +1,3 @@
-/* reseting defalt marginz */
 * {
     margin: 0;
     padding: 0;
@@ -7,26 +6,25 @@
 }
 
 body {
-    background-color: #f0f0f0; /* matching the background of the image */
+    background-color: #f0f0f0;
     overflow-x: hidden;
-    padding: 30px; /* Reduced from 50px */
+    padding: 30px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* main warpper for evry seccion */
 .mian-containr {
     width: 100%;
     max-width: 1200px;
-    height: calc(100vh - 60px); /* Fill the screen minus the padding */
+    height: calc(100vh - 60px); 
     min-height: 600px;
-    position: relative; /* relative for absolutes inside!! */
+    position: relative; /* gtta keep reltive for abs */
     display: flex;
-    margin-bottom: 30px; /* some spce between scrollsss */
-    border-radius: 12px; /* reduced border-radius */
+    margin-bottom: 30px; 
+    border-radius: 12px; 
     box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
-    overflow: hidden; /* keep everything inside the rounded corners */
+    overflow: hidden; 
 }
 
 .yelo-side {
@@ -53,7 +51,7 @@ body {
     left: 40px;
 }
 
-/* text block positioning */
+/* txt part */
 .the-txt-stuf {
     position: absolute;
     top: 50%;
@@ -100,7 +98,7 @@ body {
     margin-right: 15px;
 }
 
-/* watter mark */
+/* bg logo bottom left*/
 .watrmrk {
     position: absolute;
     width: 300px;
@@ -113,18 +111,18 @@ body {
     z-index: 1;
 }
 
-/* pokemon image positing absolute so it overlapppps */
+/* pokemon overlaps both sides */
 .big-pokkemon {
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translate(-50%, -50%); /* to centerr it based on left 65 */
+    transform: translate(-50%, -50%); 
     width: 550px;
-    z-index: 99; /* must be on top of erthing */
+    z-index: 99; /* allway atop !! */
     pointer-events: none;
 }
 
-/* menu icon top rigt */
+/* hambgr icon */
 .hamborger {
     position: absolute;
     top: 40px;
@@ -133,7 +131,7 @@ body {
     cursor: pointer;
 }
 
-/* dat dots on the righttt */
+/* thos dots */
 .dootz {
     position: absolute;
     top: 50%;
